@@ -19,14 +19,14 @@ int main(int argc,char *argv[])
         if (fp1 == NULL) {
             printf("%s : File opening Error\n", argv[1]);
             return -1;
-        }    
+        }
 
         fp2 = fopen(argv[2], "r");
 
         if(fp2 == NULL) {
             printf("%s : File opening Error\n", argv[2]);
             return -1;
-        }    
+        }
 
         while(((p = getc(fp1)) != EOF) && ((q = getc(fp2)) != EOF)) {
             i++;
